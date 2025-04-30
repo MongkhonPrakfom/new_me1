@@ -1,0 +1,32 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.navbar.dark-mode,
+footer.dark-mode {
+    background-color: #1f1f1f !important;
+    color: white !important;
+}
+
+.navbar.dark-mode .nav-link,
+.navbar.dark-mode .navbar-brand,
+footer.dark-mode .text-dark {
+    color: white !important;
+}
+
+.btn-toggle-dark {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.btn-toggle-dark:focus {
+    outline: none;
+    box-shadow: none;
+}
+
