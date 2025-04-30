@@ -35,50 +35,67 @@
     </nav>
   
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="row shadow-lg rounded p-4 bg-white w-75">
-            <!-- Illustration -->
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="img/login.png" class="img-fluid" alt="Illustration" style="max-width: 80%;">
+        <div class="row shadow-lg rounded-4 overflow-hidden bg-white w-100" style="max-width: 900px;">
+        
+            <!-- Right Illustration Section -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center text-white" style="background-color: #007bff;">
+                <div class="text-center p-4">
+                    <img src="img/signup.png" class="img-fluid mb-4" alt="Illustration" style="max-width: 80%;" />
+                    <h4 class="fw-semibold">Sudah Ada Akaun?</h4>
+                    <p>Daftar untuk akses akaun anda.</p>
+                    <a href="login.html" class="btn btn-outline-light rounded-pill px-4 py-2 mt-2">Daftar Account</a>
+                </div>
             </div>
-            
-            <!-- Form Container -->
-            <div class="col-md-6">
-                <h2 class="mb-4 text-center">Login</h2>
+            <!-- Left Form Section -->
+            <div class="col-md-6 p-5">
+                <h2 class="mb-4 text-center fw-bold">Daftar Akaun</h2>
+                
                 <form action="#" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Email</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" name="email" class="form-control" required />
                     </div>
+                </div>
 
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" id="password" name="password" class="form-control" required>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Kata Laluan</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="password" name="password" class="form-control" required />
                     </div>
+                </div>
 
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label" for="remember">Remember me</label>
-                    </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="remember" />
+                    <label class="form-check-label" for="remember">Ingat saya</label>
+                </div>
 
-                    <button type="submit" class="btn btn-primary w-100">Log In</button>
+                <button type="submit" class="btn btn-primary w-100">Daftar Sekarang</button>
                 </form>
 
-                <p class="text-center mt-3">
-                    <a href="register.html">Create an account</a>
-                </p>
+                <!-- Divider with text -->
+                <div class="d-flex align-items-center my-4">
+                    <hr class="flex-grow-1" />
+                    <span class="px-3 text-muted">atau daftar dengan</span>
+                    <hr class="flex-grow-1" />
+                </div>
 
-                <div class="text-center mt-4">
-                    <span>Or login with</span>
-                    <div class="d-flex justify-content-center mt-2">
-                        <button class="btn btn-outline-primary mx-2"><i class="fab fa-facebook"></i> Facebook</button>
-                        <button class="btn btn-outline-info mx-2"><i class="fab fa-twitter"></i> Twitter</button>
-                        <button class="btn btn-outline-danger mx-2"><i class="fab fa-google"></i> Google</button>
-                    </div>
+                <!-- Social Buttons -->
+                <div class="d-flex justify-content-center gap-2">
+                    <button class="btn btn-outline-primary">
+                        <i class="fab fa-facebook-f me-1"></i> Facebook
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <i class="fab fa-google me-1"></i> Google
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
+    
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-5 border-top">
         <div class="text-center text-dark p-3 ">
